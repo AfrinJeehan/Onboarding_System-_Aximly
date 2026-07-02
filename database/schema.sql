@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS buyers (
     company_name VARCHAR(150),
     business_type VARCHAR(100),
     address VARCHAR(255),
-    onboarding_goal VARCHAR(1000),
+    
     status VARCHAR(20) DEFAULT 'pending',
     notification VARCHAR(1000),
     notification_seen_at TIMESTAMP,
