@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: buyer-onboarding-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: buyers_db
+      POSTGRES_USER: buyers_user
+      POSTGRES_PASSWORD: buyers_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - buyer_onboarding_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  buyer_onboarding_postgres_data:
