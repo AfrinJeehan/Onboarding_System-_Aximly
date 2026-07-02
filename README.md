@@ -1,2 +1,2 @@
-# Onboarding_System-_Aximly
+# Onboarding_System_Aximly
 Buyer - Seller Onboarding System Assesment
